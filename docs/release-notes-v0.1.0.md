@@ -1,5 +1,3 @@
-# Resonance v0.1.0 — early access
-
 **Native Rust DSP for PipeWire. Your EasyEffects presets just work.**
 
 This is the first public build of Resonance: a small Rust daemon that owns a
@@ -32,7 +30,7 @@ by the daemon itself. No LSP Plugins, no LV2 host, no Qt.
 ```bash
 tar xzf resonance-v0.1.0-x86_64-unknown-linux-gnu.tar.gz
 cd resonance-v0.1.0-x86_64-unknown-linux-gnu
-./packaging/install.sh
+./install.sh
 systemctl --user enable --now resonance.service
 ```
 
