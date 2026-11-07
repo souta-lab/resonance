@@ -1,0 +1,148 @@
+{
+    "output": {
+        "blocklist": [],
+        "equalizer": {
+            "balance": 0.0,
+            "bypass": false,
+            "input-gain": -3.0,
+            "left.band0": {
+                "frequency": 60,
+                "gain": 6.0,
+                "mute": false,
+                "q": 0.7,
+                "slope": 0.0,
+                "solo": false,
+                "type": "Lo-shelf",
+                "width": 4.0
+            },
+            "left.band1": {
+                "frequency": 120,
+                "gain": 3.0,
+                "mute": false,
+                "q": 1.2,
+                "slope": 0.0,
+                "solo": false,
+                "type": "Bell",
+                "width": 4.0
+            },
+            "left.band2": {
+                "frequency": 250,
+                "gain": -1.5,
+                "mute": false,
+                "q": 1.4,
+                "slope": 0.0,
+                "solo": false,
+                "type": "Bell",
+                "width": 4.0
+            },
+            "left.band3": {
+                "frequency": 500,
+                "gain": 0.0,
+                "mute": false,
+                "q": 1.0,
+                "slope": 0.0,
+                "solo": false,
+                "type": "Bell",
+                "width": 4.0
+            },
+            "left.band4": {
+                "frequency": 1000,
+                "gain": 0.0,
+                "mute": false,
+                "q": 1.0,
+                "slope": 0.0,
+                "solo": false,
+                "type": "Bell",
+                "width": 4.0
+            },
+            "left.band5": {
+                "frequency": 2000,
+                "gain": 0.0,
+                "mute": false,
+                "q": 1.0,
+                "slope": 0.0,
+                "solo": false,
+                "type": "Bell",
+                "width": 4.0
+            },
+            "num-bands": 6,
+            "output-gain": 0.0,
+            "pitch-left": 0.0,
+            "pitch-right": 0.0,
+            "right.band0": {
+                "frequency": 60,
+                "gain": 6.0,
+                "mute": false,
+                "q": 0.7,
+                "slope": 0.0,
+                "solo": false,
+                "type": "Lo-shelf",
+                "width": 4.0
+            },
+            "right.band1": {
+                "frequency": 120,
+                "gain": 3.0,
+                "mute": false,
+                "q": 1.2,
+                "slope": 0.0,
+                "solo": false,
+                "type": "Bell",
+                "width": 4.0
+            },
+            "right.band2": {
+                "frequency": 250,
+                "gain": -1.5,
+                "mute": false,
+                "q": 1.4,
+                "slope": 0.0,
+                "solo": false,
+                "type": "Bell",
+                "width": 4.0
+            },
+            "right.band3": {
+                "frequency": 500,
+                "gain": 0.0,
+                "mute": false,
+                "q": 1.0,
+                "slope": 0.0,
+                "solo": false,
+                "type": "Bell",
+                "width": 4.0
+            },
+            "right.band4": {
+                "frequency": 1000,
+                "gain": 0.0,
+                "mute": false,
+                "q": 1.0,
+                "slope": 0.0,
+                "solo": false,
+                "type": "Bell",
+                "width": 4.0
+            },
+            "right.band5": {
+                "frequency": 2000,
+                "gain": 0.0,
+                "mute": false,
+                "q": 1.0,
+                "slope": 0.0,
+                "solo": false,
+                "type": "Bell",
+                "width": 4.0
+            },
+            "split-channels": false
+        },
+        "limiter": {
+            "attack": 5.0,
+            "bypass": false,
+            "input-gain": 0.0,
+            "lookahead": 5.0,
+            "output-gain": 0.0,
+            "release": 50.0,
+            "threshold": -1.0
+        },
+        "plugins_order": [
+            "equalizer",
+            "limiter"
+        ]
+    }
+}

@@ -1,0 +1,20 @@
+[Unit]
+Description=Resonance audio effects daemon
+Documentation=https://github.com/example/resonance
+After=pipewire.service wireplumber.service
+Wants=pipewire.service
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/resonance daemon
+Restart=on-failure
+RestartSec=2
+Environment=RUST_LOG=info
+# The daemon is a normal user process; it does not need realtime privileges
+# because the DSP runs in its own thread and the PipeWire graph handles
+# scheduling. Uncomment to give it a realtime budget anyway.
+#LimitRTPRIO=95
+#LimitMEMLOCK=infinity
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,53 @@
+{
+    "input": {
+        "blocklist": [
+            "Firefox"
+        ],
+        "compressor#0": {
+            "attack": 8.0,
+            "bypass": false,
+            "hpf-frequency": 80.0,
+            "hpf-mode": "12 dB/oct",
+            "input-gain": 0.0,
+            "knee": 6.0,
+            "lookahead": 0.0,
+            "lpf-frequency": 20000.0,
+            "lpf-mode": "Off",
+            "makeup": 4.0,
+            "mode": "Downward",
+            "output-gain": 0.0,
+            "ratio": 3.5,
+            "release": 180.0,
+            "sidechain-mode": "RMS",
+            "sidechain-source": "Internal",
+            "threshold": -22.0
+        },
+        "limiter#0": {
+            "alr": false,
+            "attack": 5.0,
+            "bypass": false,
+            "dithering": "None",
+            "gain-boost": false,
+            "input-gain": 0.0,
+            "lookahead": 5.0,
+            "output-gain": 0.0,
+            "oversampling": "None",
+            "release": 50.0,
+            "threshold": -1.0
+        },
+        "noise_reduction#0": {
+            "amount": 65.0,
+            "bypass": false,
+            "input-gain": 0.0,
+            "model": "Spectral subtraction",
+            "noise-floor": -62.0,
+            "output-gain": 0.0,
+            "release": 120.0
+        },
+        "plugins_order": [
+            "noise_reduction#0",
+            "compressor#0",
+            "limiter#0"
+        ]
+    }
+}

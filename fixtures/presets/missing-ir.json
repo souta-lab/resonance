@@ -1,0 +1,18 @@
+{
+    "output": {
+        "blocklist": [],
+        "convolver#0": {
+            "autogain": true,
+            "blocksize": "1024",
+            "bypass": false,
+            "input-gain": 0.0,
+            "ir-width": 100.0,
+            "kernel-name": "studio-hall",
+            "output-gain": 0.0,
+            "tailsize": 0.0
+        },
+        "plugins_order": [
+            "convolver#0"
+        ]
+    }
+}

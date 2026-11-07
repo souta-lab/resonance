@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://resonance.local/schemas/preset-v1.json",
+  "title": "EasyEffects-compatible preset",
+  "description": "A pipeline preset as written by EasyEffects 8.3.2 and by Resonance. Exactly one of input/output must be present. Instance objects are intentionally open: unknown keys are preserved.",
+  "type": "object",
+  "additionalProperties": false,
+  "oneOf": [{ "required": ["input"] }, { "required": ["output"] }],
+  "properties": {
+    "input": { "$ref": "#/$defs/pipeline" },
+    "output": { "$ref": "#/$defs/pipeline" }
+  },
+  "$defs": {
+    "pipeline": {
+      "type": "object",
+      "required": ["plugins_order"],
+      "properties": {
+        "blocklist": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Application names excluded from processing."
+        },
+        "plugins_order": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Instance ids in signal order, e.g. equalizer#0."
+        }
+      },
+      "patternProperties": {
+        "^[a-z_]+(#\\d+)?$": {
+          "type": "object",
+          "description": "Plugin instance settings. Keys are kebab-case EasyEffects settings; unknown keys are preserved."
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

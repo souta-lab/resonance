@@ -1,0 +1,47 @@
+{
+    "output": {
+        "blocklist": [],
+        "equalizer#0": {
+            "bypass": false,
+            "future-key": {
+                "flag": true,
+                "nested": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "input-gain": 0.0,
+            "left.band0": {
+                "frequency": 1000,
+                "gain": 2.0,
+                "mute": false,
+                "q": 1.0,
+                "slope": 0.0,
+                "solo": false,
+                "type": "Bell",
+                "width": 4.0
+            },
+            "num-bands": 2,
+            "output-gain": 0.0,
+            "right.band0": {
+                "frequency": 1000,
+                "gain": 2.0,
+                "mute": false,
+                "q": 1.0,
+                "slope": 0.0,
+                "solo": false,
+                "type": "Bell",
+                "width": 4.0
+            }
+        },
+        "mystery#0": {
+            "bypass": false,
+            "some-setting": 42
+        },
+        "plugins_order": [
+            "equalizer#0",
+            "mystery#0"
+        ]
+    }
+}
