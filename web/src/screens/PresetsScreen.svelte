@@ -43,7 +43,10 @@
   const selectedListItem = $derived(list.find((preset) => preset.id === selectedId) ?? null);
   const selectedInstanceEntries = $derived(
     selectedPlugin
-      ? Object.entries(instanceFor(selectedPlugin)).filter(([key]) => key !== 'bypass')
+      ? Object.entries(instanceFor(selectedPlugin)).filter(
+          ([key, value]) =>
+            key !== 'bypass' && !key.includes('.band') && typeof value !== 'object',
+        )
       : [],
   );
   const bypassedCount = $derived(
