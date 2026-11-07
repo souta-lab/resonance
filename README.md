@@ -9,11 +9,12 @@
 <a href="https://github.com/souta-lab/resonance/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/souta-lab/resonance/ci.yml?branch=master&style=for-the-badge&logo=githubactions&label=CI" /></a>
 <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/souta-lab/resonance?style=for-the-badge&color=3F6B3A" /></a>
 <a href="https://www.rust-lang.org"><img alt="Rust" src="https://img.shields.io/badge/Rust-1.85%2B-dea584?style=for-the-badge&logo=rust&logoColor=white" /></a>
+<br />
 <a href="https://pipewire.org"><img alt="PipeWire" src="https://img.shields.io/badge/PipeWire-1.6-4A90D9?style=for-the-badge" /></a>
 <a href="https://github.com/wwmm/easyeffects"><img alt="EasyEffects" src="https://img.shields.io/badge/EasyEffects-8.3.2-FF6B35?style=for-the-badge" /></a>
-
 <a href="#-why-resonance"><img alt="LSP Plugins" src="https://img.shields.io/badge/LSP%20Plugins-not%20required-2C6B66?style=for-the-badge" /></a>
 <a href="#-testing"><img alt="Tests" src="https://img.shields.io/badge/tests-69%20passing-brightgreen?style=for-the-badge" /></a>
+<br />
 <a href="https://github.com/souta-lab/resonance/issues"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-E39A3B?style=for-the-badge" /></a>
 <a href="https://github.com/souta-lab/resonance/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/souta-lab/resonance?style=for-the-badge&logo=github&color=E39A3B" /></a>
 
