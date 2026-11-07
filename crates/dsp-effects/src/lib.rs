@@ -4,6 +4,14 @@
 //! other external plugin binaries are loaded. The catalog records how close
 //! each implementation is to the EasyEffects reference.
 
+#![allow(
+    clippy::needless_range_loop,
+    clippy::new_without_default,
+    clippy::excessive_precision,
+    clippy::large_enum_variant,
+    clippy::manual_is_multiple_of
+)]
+
 pub mod catalog;
 pub mod dynamics;
 pub mod eq;

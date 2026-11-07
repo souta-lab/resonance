@@ -977,7 +977,7 @@ pub fn apply_bands(store: &ParamStore, bands: &Map<String, Value>) -> Vec<String
                         .or_else(|| {
                             field_value
                                 .as_str()
-                                .and_then(|s| band_type_index(s))
+                                .and_then(band_type_index)
                                 .map(ParamValue::Enum)
                         })
                 } else {

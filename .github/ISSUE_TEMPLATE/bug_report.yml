@@ -1,0 +1,73 @@
+name: Bug report
+description: Something is broken or sounds wrong
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Please include enough detail to reproduce the
+        problem. For audio issues, a short WAV render or a preset JSON helps a
+        lot.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: A clear description of the bug and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Apply preset X
+        2. Play a 1 kHz tone
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Resonance version
+      description: Output of `resonance --version` or the release tag.
+    validations:
+      required: true
+  - type: input
+    id: pipewire
+    attributes:
+      label: PipeWire version
+      description: Output of `pipewire --version`.
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Audio mode
+      options:
+        - pw-cat bridge (default)
+        - --test-signal
+        - --offline
+        - offline render (`resonance render`)
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: `resonance doctor` output
+      render: text
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Run with `RUST_LOG=debug` and paste the relevant lines.
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues
+          required: true
+        - label: I am not reporting a security vulnerability (see SECURITY.md)
+          required: true

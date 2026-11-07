@@ -779,7 +779,7 @@ pub fn spawn_meter_pump(state: AppState) {
                     dsp_p99_us: snapshot.dsp_p99_us,
                     xruns: snapshot.xruns,
                 });
-                if tick % 3 == 0 {
+                if tick.is_multiple_of(3) {
                     let _ = state.inner.events.send(ServerEvent::Spectrum {
                         pipeline: kind,
                         bins: meters.spectrum(),

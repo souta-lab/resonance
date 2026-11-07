@@ -16,7 +16,7 @@ impl KWeighting {
     pub fn new(sample_rate: f32) -> Self {
         let fs = sample_rate.max(8000.0);
         // Stage 1: high shelf (+4 dB at 1681.97 Hz).
-        let f0 = 1681.974_450_955_533_f32;
+        let f0 = 1_681.974_450_955_533_f32;
         let g = 3.999_843_853_973_347_f32;
         let q = 0.707_175_236_955_419_6_f32;
         let k = (std::f32::consts::PI * f0 / fs).tan();

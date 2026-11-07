@@ -1,5 +1,7 @@
 //! `resonance` command line interface.
 
+#![allow(clippy::needless_range_loop)]
+
 use std::io::{Read, Write};
 use std::net::TcpStream;
 use std::path::PathBuf;

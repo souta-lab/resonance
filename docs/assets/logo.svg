@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Resonance logo">
+  <defs>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E39A3B"/>
+      <stop offset="1" stop-color="#B25E00"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="28" fill="#131516"/>
+  <rect x="1" y="1" width="254" height="254" rx="27" fill="none" stroke="#2E3334" stroke-width="2"/>
+
+  <!-- rack rails -->
+  <g stroke="#2E3334" stroke-width="2">
+    <path d="M28 64H228M28 192H228"/>
+  </g>
+
+  <!-- spectrum bars -->
+  <g fill="#6FB6AE" opacity="0.55">
+    <rect x="44" y="150" width="10" height="42"/>
+    <rect x="60" y="132" width="10" height="60"/>
+    <rect x="76" y="112" width="10" height="80"/>
+    <rect x="92" y="140" width="10" height="52"/>
+    <rect x="108" y="122" width="10" height="70"/>
+    <rect x="124" y="96" width="10" height="96"/>
+    <rect x="140" y="118" width="10" height="74"/>
+    <rect x="156" y="136" width="10" height="56"/>
+    <rect x="172" y="150" width="10" height="42"/>
+    <rect x="188" y="160" width="10" height="32"/>
+  </g>
+
+  <!-- waveform -->
+  <path d="M36 128 C52 96 68 96 84 128 C100 160 116 160 132 128 C148 96 164 96 180 128 C196 160 212 160 228 128"
+        fill="none" stroke="url(#a)" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- LED -->
+  <circle cx="212" cy="44" r="5" fill="#E39A3B"/>
+</svg>

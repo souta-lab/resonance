@@ -11,6 +11,16 @@
 //! * Retired graphs are handed back to the control thread so that the last
 //!   reference is never dropped on the audio thread.
 
+#![allow(
+    clippy::needless_range_loop,
+    clippy::new_without_default,
+    clippy::excessive_precision,
+    clippy::large_enum_variant,
+    clippy::manual_is_multiple_of,
+    clippy::vec_box,
+    clippy::should_implement_trait
+)]
+
 pub mod biquad;
 pub mod delay;
 pub mod effect;

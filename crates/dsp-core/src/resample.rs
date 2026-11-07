@@ -118,11 +118,9 @@ impl Oversampler {
         let mut n = 0;
         for (i, &x) in input.iter().enumerate() {
             let y = self.lp.process(0, x);
-            if i % self.factor == self.phase {
-                if n < out.len() {
-                    out[n] = y;
-                    n += 1;
-                }
+            if i % self.factor == self.phase && n < out.len() {
+                out[n] = y;
+                n += 1;
             }
         }
         n

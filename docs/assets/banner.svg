@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 420" width="1600" height="420" role="img" aria-label="Resonance — native Rust DSP for PipeWire">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#242829" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="spectrum" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6FB6AE" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#6FB6AE" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E39A3B"/>
+      <stop offset="1" stop-color="#B25E00"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="420" fill="#131516"/>
+  <rect width="1600" height="420" fill="url(#grid)" opacity="0.55"/>
+  <rect x="0" y="0" width="1600" height="1" fill="#2E3334"/>
+  <rect x="0" y="419" width="1600" height="1" fill="#2E3334"/>
+
+  <!-- left: wordmark -->
+  <g>
+    <circle cx="88" cy="96" r="4" fill="#E39A3B" filter="url(#glow)"/>
+    <text x="104" y="101" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="11" letter-spacing="3" fill="#6E6F69">CONTROL SURFACE</text>
+
+    <text x="80" y="178" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="66" font-weight="600" letter-spacing="9" fill="#E8E2D4">RESONANCE</text>
+    <rect x="82" y="196" width="132" height="3" fill="url(#amber)"/>
+
+    <text x="82" y="244" font-family="'IBM Plex Sans', system-ui, sans-serif" font-size="25" font-weight="500" fill="#E8E2D4">Native Rust DSP for PipeWire</text>
+    <text x="82" y="274" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="14" fill="#A8A69C">EasyEffects 8.3.2 presets · 33 effects · no LSP plugins</text>
+
+    <g font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="11" letter-spacing="1.5">
+      <rect x="82" y="304" width="72" height="26" rx="2" fill="#1A1D1E" stroke="#2E3334"/>
+      <text x="118" y="321" text-anchor="middle" fill="#E39A3B">RUST</text>
+      <rect x="162" y="304" width="104" height="26" rx="2" fill="#1A1D1E" stroke="#2E3334"/>
+      <text x="214" y="321" text-anchor="middle" fill="#6FB6AE">PIPEWIRE</text>
+      <rect x="274" y="304" width="86" height="26" rx="2" fill="#1A1D1E" stroke="#2E3334"/>
+      <text x="317" y="321" text-anchor="middle" fill="#A8A69C">SVELTE</text>
+      <rect x="368" y="304" width="92" height="26" rx="2" fill="#1A1D1E" stroke="#2E3334"/>
+      <text x="414" y="321" text-anchor="middle" fill="#A8A69C">GPL-3.0</text>
+    </g>
+
+    <text x="82" y="372" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="11" fill="#6E6F69">v0.1.0 · early access</text>
+  </g>
+
+  <!-- right: measurement plot -->
+  <g>
+    <rect x="900" y="72" width="620" height="276" rx="2" fill="#0E1011" stroke="#2E3334"/>
+    <g stroke="#242829" stroke-width="1">
+      <path d="M900 120H1520M900 168H1520M900 216H1520M900 264H1520M900 312H1520"/>
+      <path d="M960 72V348M1040 72V348M1120 72V348M1200 72V348M1280 72V348M1360 72V348M1440 72V348"/>
+    </g>
+
+    <!-- spectrum -->
+    <path d="M900 214 L931 224 L963 236 L994 242 L1026 214 L1057 168 L1089 180 L1120 198 L1152 190 L1183 208 L1215 224 L1246 214 L1278 232 L1309 248 L1341 240 L1372 256 L1404 266 L1435 274 L1467 282 L1500 290 L1520 290 L1520 348 L900 348 Z"
+          fill="url(#spectrum)" stroke="#6FB6AE" stroke-width="1.6" stroke-linejoin="round"/>
+
+    <!-- EQ curve -->
+    <path d="M900 252 C948 206 986 196 1024 232 C1062 268 1100 268 1140 254 C1180 240 1220 242 1260 248 C1300 254 1340 258 1380 264 C1420 270 1462 280 1520 290"
+          fill="none" stroke="url(#amber)" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- band handles -->
+    <g fill="#131516" stroke="#E39A3B" stroke-width="2">
+      <circle cx="948" cy="218" r="5"/>
+      <circle cx="1024" cy="232" r="5"/>
+      <circle cx="1140" cy="254" r="5"/>
+      <circle cx="1260" cy="248" r="5"/>
+      <circle cx="1380" cy="264" r="5"/>
+    </g>
+
+    <!-- labels -->
+    <g font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="10" fill="#6E6F69">
+      <text x="900" y="366">20</text>
+      <text x="1030" y="366">100</text>
+      <text x="1170" y="366">1k</text>
+      <text x="1310" y="366">5k</text>
+      <text x="1470" y="366">20k</text>
+      <text x="1532" y="120" fill="#6FB6AE">+12</text>
+      <text x="1532" y="216" fill="#6FB6AE">0</text>
+      <text x="1532" y="312" fill="#6FB6AE">-12</text>
+    </g>
+
+    <!-- LED ladder -->
+    <g>
+      <rect x="1560" y="96" width="10" height="240" rx="1" fill="#0E1011" stroke="#2E3334"/>
+      <g fill="#3F6B3A">
+        <rect x="1562" y="300" width="6" height="8"/><rect x="1562" y="286" width="6" height="8"/>
+        <rect x="1562" y="272" width="6" height="8"/><rect x="1562" y="258" width="6" height="8"/>
+        <rect x="1562" y="244" width="6" height="8"/><rect x="1562" y="230" width="6" height="8"/>
+        <rect x="1562" y="216" width="6" height="8"/><rect x="1562" y="202" width="6" height="8"/>
+      </g>
+      <g fill="#7FA86F">
+        <rect x="1562" y="188" width="6" height="8"/><rect x="1562" y="174" width="6" height="8"/>
+        <rect x="1562" y="160" width="6" height="8"/>
+      </g>
+      <g fill="#E39A3B">
+        <rect x="1562" y="146" width="6" height="8"/><rect x="1562" y="132" width="6" height="8"/>
+      </g>
+      <rect x="1562" y="118" width="6" height="8" fill="#D4614C"/>
+    </g>
+
+    <text x="900" y="392" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="11" fill="#6E6F69">48 kHz · 128 frames · p99 68 µs · 0 xruns</text>
+  </g>
+</svg>

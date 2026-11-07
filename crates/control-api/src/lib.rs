@@ -1,5 +1,7 @@
 //! Resonance control API: HTTP/JSON, WebSocket events, static SPA hosting.
 
+#![allow(clippy::result_large_err)]
+
 pub mod error;
 pub mod routes;
 pub mod server;

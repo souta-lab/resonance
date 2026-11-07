@@ -1,5 +1,7 @@
 //! Resonance daemon: process lifecycle, PipeWire bridge, audio threads.
 
+#![allow(clippy::needless_range_loop)]
+
 use std::path::PathBuf;
 use std::sync::atomic::{AtomicBool, Ordering};
 use std::sync::Arc;
