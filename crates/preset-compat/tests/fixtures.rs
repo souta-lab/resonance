@@ -20,6 +20,7 @@ fn every_fixture_parses() {
         "legacy-format.json",
         "unknown-keys.json",
         "missing-ir.json",
+        "convolver.json",
     ] {
         let preset = preset_compat::parse(&read(name)).unwrap_or_else(|e| panic!("{name}: {e}"));
         assert!(
@@ -67,6 +68,17 @@ fn missing_ir_is_reported() {
     assert_eq!(missing.len(), 1);
     assert_eq!(missing[0].name, "studio-hall");
     assert_eq!(missing[0].instance, "convolver#0");
+}
+
+#[test]
+fn convolver_fixture_resolves_its_ir() {
+    let preset = preset_compat::parse(&read("convolver.json")).unwrap();
+    let dirs = AssetDirs {
+        irs: vec![fixtures().join("../irs")],
+        models: Vec::new(),
+    };
+    let missing = preset_compat::resolve_assets(&preset, &dirs);
+    assert!(missing.is_empty(), "{missing:?}");
 }
 
 #[test]
