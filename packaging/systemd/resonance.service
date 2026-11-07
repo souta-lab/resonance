@@ -1,6 +1,6 @@
 [Unit]
 Description=Resonance audio effects daemon
-Documentation=https://github.com/example/resonance
+Documentation=https://github.com/souta-lab/resonance
 After=pipewire.service wireplumber.service
 Wants=pipewire.service
 

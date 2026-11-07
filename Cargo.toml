@@ -8,7 +8,7 @@ edition = "2021"
 license = "GPL-3.0-or-later"
 rust-version = "1.85"
 authors = ["Project Resonance contributors"]
-repository = "https://example.invalid/resonance"
+repository = "https://github.com/souta-lab/resonance"
 
 [workspace.dependencies]
 serde = { version = "1", features = ["derive"] }

@@ -11,7 +11,7 @@ By participating you agree to the [Code of Conduct](CODE_OF_CONDUCT.md).
 ## Development setup
 
 ```bash
-git clone https://github.com/s0u7a/resonance.git
+git clone https://github.com/souta-lab/resonance.git
 cd resonance
 
 # Rust

@@ -11,7 +11,7 @@
 Please **do not** open a public issue for security problems. Use GitHub's
 private vulnerability reporting:
 
-<https://github.com/s0u7a/resonance/security/advisories/new>
+<https://github.com/souta-lab/resonance/security/advisories/new>
 
 Include a description, reproduction steps, and the affected version. You can
 expect an acknowledgement within a few days.

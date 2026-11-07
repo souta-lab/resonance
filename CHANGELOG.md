@@ -48,5 +48,5 @@ First public early-access release.
 - Stream blocklist enforcement, shared audio and mic monitoring are not
   implemented.
 
-[Unreleased]: https://github.com/s0u7a/resonance/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/s0u7a/resonance/releases/tag/v0.1.0
+[Unreleased]: https://github.com/souta-lab/resonance/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/souta-lab/resonance/releases/tag/v0.1.0

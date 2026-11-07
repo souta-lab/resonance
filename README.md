@@ -5,17 +5,17 @@
 <br />
 <br />
 
-<a href="https://github.com/s0u7a/resonance/releases"><img alt="Release" src="https://img.shields.io/github/v/release/s0u7a/resonance?style=for-the-badge&logo=github&label=release&color=E39A3B" /></a>
-<a href="https://github.com/s0u7a/resonance/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/s0u7a/resonance/ci.yml?branch=master&style=for-the-badge&logo=githubactions&label=CI" /></a>
-<a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/s0u7a/resonance?style=for-the-badge&color=3F6B3A" /></a>
+<a href="https://github.com/souta-lab/resonance/releases"><img alt="Release" src="https://img.shields.io/github/v/release/souta-lab/resonance?style=for-the-badge&logo=github&label=release&color=E39A3B" /></a>
+<a href="https://github.com/souta-lab/resonance/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/souta-lab/resonance/ci.yml?branch=master&style=for-the-badge&logo=githubactions&label=CI" /></a>
+<a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/souta-lab/resonance?style=for-the-badge&color=3F6B3A" /></a>
 <a href="https://www.rust-lang.org"><img alt="Rust" src="https://img.shields.io/badge/Rust-1.85%2B-dea584?style=for-the-badge&logo=rust&logoColor=white" /></a>
 <a href="https://pipewire.org"><img alt="PipeWire" src="https://img.shields.io/badge/PipeWire-1.6-4A90D9?style=for-the-badge" /></a>
 <a href="https://github.com/wwmm/easyeffects"><img alt="EasyEffects" src="https://img.shields.io/badge/EasyEffects-8.3.2-FF6B35?style=for-the-badge" /></a>
 
 <a href="#-why-resonance"><img alt="LSP Plugins" src="https://img.shields.io/badge/LSP%20Plugins-not%20required-2C6B66?style=for-the-badge" /></a>
 <a href="#-testing"><img alt="Tests" src="https://img.shields.io/badge/tests-69%20passing-brightgreen?style=for-the-badge" /></a>
-<a href="https://github.com/s0u7a/resonance/issues"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-E39A3B?style=for-the-badge" /></a>
-<a href="https://github.com/s0u7a/resonance/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/s0u7a/resonance?style=for-the-badge&logo=github&color=E39A3B" /></a>
+<a href="https://github.com/souta-lab/resonance/issues"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-E39A3B?style=for-the-badge" /></a>
+<a href="https://github.com/souta-lab/resonance/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/souta-lab/resonance?style=for-the-badge&logo=github&color=E39A3B" /></a>
 
 <h3>Studio-grade audio effects for PipeWire.<br />Written in Rust. Your EasyEffects presets just work.</h3>
 
@@ -144,7 +144,7 @@ token for mutations and WebSocket subscriptions.
 ### From source (recommended for now)
 
 ```bash
-git clone https://github.com/s0u7a/resonance.git
+git clone https://github.com/souta-lab/resonance.git
 cd resonance
 
 # 1. Build the daemon and CLI
@@ -177,7 +177,7 @@ The meters move, the DSP runs, and nothing is routed. Perfect for a first look.
 ### One command install
 
 ```bash
-git clone https://github.com/s0u7a/resonance.git
+git clone https://github.com/souta-lab/resonance.git
 cd resonance
 ./packaging/install.sh
 systemctl --user enable --now resonance.service
@@ -418,23 +418,23 @@ Contributions are welcome — especially DSP correctness tests, EasyEffects
 preset fixtures, and packaging.
 
 ```bash
-git clone https://github.com/s0u7a/resonance.git
+git clone https://github.com/souta-lab/resonance.git
 cd resonance
 cargo test --workspace
 cd web && npm install && npm run dev
 ```
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a PR. Good first issues
-are labelled [`good first issue`](https://github.com/s0u7a/resonance/labels/good%20first%20issue).
+are labelled [`good first issue`](https://github.com/souta-lab/resonance/labels/good%20first%20issue).
 
-<a href="https://github.com/s0u7a/resonance/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=s0u7a/resonance" alt="Contributors" />
+<a href="https://github.com/souta-lab/resonance/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=souta-lab/resonance" alt="Contributors" />
 </a>
 
 ## ⭐ Star history
 
-<a href="https://star-history.com/#s0u7a/resonance&Date">
-  <img src="https://api.star-history.com/svg?repos=s0u7a/resonance&type=Date" alt="Star history" width="640" />
+<a href="https://star-history.com/#souta-lab/resonance&Date">
+  <img src="https://api.star-history.com/svg?repos=souta-lab/resonance&type=Date" alt="Star history" width="640" />
 </a>
 
 ## 📜 License
@@ -461,5 +461,5 @@ See [LICENSE](LICENSE).
 <br />
 <sub>Built with ❤️, Rust, and a lot of biquads.</sub>
 <br /><br />
-<a href="https://github.com/s0u7a/resonance/stargazers">⭐ Star this repo if you want native PipeWire effects to keep growing.</a>
+<a href="https://github.com/souta-lab/resonance/stargazers">⭐ Star this repo if you want native PipeWire effects to keep growing.</a>
 </div>

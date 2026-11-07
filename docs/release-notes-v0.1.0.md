@@ -78,4 +78,4 @@ To the EasyEffects, PipeWire, rustfft, axum, tokio, Svelte and Vite projects.
 Resonance is written from public DSP literature and the EasyEffects preset
 format; no EasyEffects or LSP source code is copied.
 
-**Full changelog:** [CHANGELOG.md](https://github.com/s0u7a/resonance/blob/master/CHANGELOG.md)
+**Full changelog:** [CHANGELOG.md](https://github.com/souta-lab/resonance/blob/master/CHANGELOG.md)
