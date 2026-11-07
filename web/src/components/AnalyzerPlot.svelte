@@ -183,7 +183,7 @@
     {/if}
 
     {#if spectrumFill}
-      <path d={spectrumFill} fill="var(--trace)" opacity="0.12" />
+      <path d={spectrumFill} fill="var(--trace)" opacity="0.16" />
       <path d={spectrumPath} fill="none" stroke="var(--trace)" stroke-width="1.5" />
     {/if}
 

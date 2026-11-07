@@ -329,7 +329,8 @@
 
   .device-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: start;
     gap: 8px;
   }
 

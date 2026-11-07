@@ -56,14 +56,23 @@ pub fn default_data_dir() -> PathBuf {
 
 pub fn default_web_dir() -> PathBuf {
     let cwd = std::env::current_dir().unwrap_or_else(|_| PathBuf::from("."));
-    let candidates = [
+    let mut candidates = vec![
         cwd.join("web/dist"),
         cwd.join("../web/dist"),
         cwd.join("../../web/dist"),
     ];
-    for candidate in candidates {
+    if let Ok(data) = std::env::var("XDG_DATA_HOME") {
+        if !data.is_empty() {
+            candidates.push(PathBuf::from(data).join("resonance/web"));
+        }
+    }
+    if let Ok(home) = std::env::var("HOME") {
+        candidates.push(PathBuf::from(home).join(".local/share/resonance/web"));
+    }
+    candidates.push(PathBuf::from("/usr/share/resonance/web"));
+    for candidate in &candidates {
         if candidate.join("index.html").is_file() {
-            return candidate;
+            return candidate.clone();
         }
     }
     cwd.join("web/dist")

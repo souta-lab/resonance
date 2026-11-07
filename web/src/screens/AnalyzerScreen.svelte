@@ -148,6 +148,7 @@
     </div>
   </section>
 
+  <div class="lower-grid">
   <section class="history-panel panel" aria-label="Level history">
     <header class="panel-head">
       <span class="micro">History</span>
@@ -263,6 +264,7 @@
       {/if}
     </div>
   </section>
+  </div>
 </div>
 
 <style>
@@ -321,6 +323,13 @@
     display: flex;
     flex-direction: column;
     flex: none;
+  }
+
+  .lower-grid {
+    display: grid;
+    grid-template-columns: minmax(320px, 0.9fr) minmax(0, 1.4fr);
+    gap: 12px;
+    align-items: start;
   }
 
   .panel-head {
@@ -403,6 +412,10 @@
   }
 
   @media (max-width: 899px) {
+    .lower-grid {
+      grid-template-columns: 1fr;
+    }
+
     .analyzer-screen {
       height: auto;
       min-height: 100%;

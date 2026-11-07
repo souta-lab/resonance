@@ -201,6 +201,10 @@
     width: 30px;
   }
 
+  thead th:nth-child(2) {
+    width: 120px;
+  }
+
   tbody td {
     height: 28px;
     padding: 1px 3px;
