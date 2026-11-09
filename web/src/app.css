@@ -444,3 +444,21 @@ a {
     scroll-behavior: auto !important;
   }
 }
+
+/* Family layer — s0u7a properties shared discipline.
+   ポートフォリオ／QUESTと共通の基盤（見出しの字間、選択色、フォーカス表現）
+   のみを重ねる。シャーシの配色とIBM Plexの書体はこのUIの identity として維持。 */
+h1, h2, h3 {
+  letter-spacing: -0.03em;
+  text-wrap: pretty;
+}
+
+::selection {
+  background: var(--ink);
+  color: var(--panel);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
